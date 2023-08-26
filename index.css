@@ -3,4 +3,112 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: gainsboro;
+    font-family: 'Playfair Display', serif;
+}
+
+section h2
+{
+    font-size: 40px;
+}
+
+#titleName
+{
+    text-align: center;
+    padding-top: 5vh;
+}
+
+#titleName h1
+{
+    font-size: 60px;
+}
+
+h2#copy
+{
+    text-align: center;
+    margin-top: 10vh;
+}
+
+section
+{
+    text-align: center;
+    margin-top: 5Vh;
+}
+
+img
+{
+    width: 500px;
+    height: 500px;
+}
+
+section#Character #Liru,#Haruma
+{
+    padding-top: 5vh;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+section#Character h3
+{
+    font-size: 30px;
+}
+
+section#Character .Introduction
+{
+    display: flex;  
+}
+
+section#Character .Explanation
+{
+    display: table;
+}
+
+section#Character .Explanation p
+{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+@media screen and (max-width:960px) 
+{
+    #titleName h1
+    {
+        font-size: 40px;
+    }
+    section#Character .Introduction
+    {
+        display: block;
+    }
+
+    img
+    {
+        width: 80%;
+        height: auto;
+    }
+
+    h2#copy
+    {
+        font-size: 20px;
+    }
+
+    section h2
+    {
+        font-size: 30px;
+    }
+
+    section#Character h3
+    {
+        font-size: 20px;
+    }
+
+    .titleExposition
+    {
+        font-size: 13px;
+    }
+
+    section#Character .Explanation p
+    {
+        padding: 5vh 10vw;
+    }
+
 }
