@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MemoryOfOur</title>
     <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10.2.0/swiper-bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/swiper@10.2.0/swiper-bundle.min.css" rel="stylesheet">
 </head>
 <body>
     <div id="titleName">
@@ -19,48 +21,95 @@
     <section id="Character">
         <h2>Character</h2>
         <p class="titleExposition">ゲームに出てくるキャラクターの紹介</p>
-        <div id="Liru">
-            <h3><ruby>Liru<rt>リル</rt></ruby></h3>
-            <div class="Introduction">
-                <img src="image/Liru.png">
-                <div class="Explanation">
-                    <p>
-                        数年前の"魔力崩壊"で生き別れた姉を探す16歳のアマツ族の少女。
-                        失くした記憶を取り戻すため、5つの国の王を探す旅に出る。
-                        姉を奪われた悲しみから、魔獣のことをひどく恨んでいるようだ。
-                    </p>
+            <div id="Liru">
+                <h3><ruby>Liru<rt>リル</rt></ruby></h3>
+                <div class="Introduction">
+                    <img src="image/Liru.png">
+                    <div class="Explanation">
+                        <p class="CharacterContent">
+                            数年前の"魔力崩壊"で生き別れた姉を探す16歳のアマツ族の少女。
+                            失くした記憶を取り戻すため、5つの国の王を探す旅に出る。
+                            姉を奪われた悲しみから、魔獣のことをひどく恨んでいるようだ。
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div id="Haruma">
-            <h3><ruby>Haruma<rt>ハルマ</rt></ruby></h3>         
-            <div class="Introduction">
-                <img src="image/Haruma.png">
-                <div class="Explanation">
-                    <p>
-                        身体の半分が魔獣に取りつかれている青年。
-                        剣術に長けているが一体何者なのだろうか。
-                        自身の記憶を取り戻すため、同じ目的を持つリルと共に行動する。
-                    </p>
+            <div id="Haruma">
+                <h3><ruby>Haruma<rt>ハルマ</rt></ruby></h3>         
+                <div class="Introduction">
+                    <img src="image/Haruma.png">
+                    <div class="Explanation">
+                        <p class="CharacterContent">
+                            身体の半分が魔獣に取りつかれている青年。
+                            剣術に長けているが一体何者なのだろうか。
+                            自身の記憶を取り戻すため、同じ目的を持つリルと共に行動する。
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
     </section>
 
     <section id="Word">
         <h2>Words Vocabulary</h2>
         <p class="titleExposition">ゲームに出てくる用語の解説</p>
+        <div class="swiper">
+            <!-- Sliderの内包コンテナ -->
+            <div class="swiper-wrapper">
+                <!-- Slideさせたいコンテンツ -->
+                <div class="swiper-slide">
+                    <div id="MaryokuHoukai">
+                        <p class="KeywordMame">
+                            魔力崩壊
+                        </p>
+                        <p class="wordContent">
+                            リルたちの母国である王都ヴォルタリアが、黒魔術により滅んだ十年前の事件のこと。<br>
+                            これにより、封印されていた魔獣たちが世界をうろつくようになった。<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div id="Amatsuxoku">
+                        <p class="KeywordMame">
+                            アマツ族
+                        </p>
+                        <p class="wordContent">
+                            王都ヴォルタリアの中でも、魔族の血が流れている民族のこと。<br>
+                            銀髪と蒼い瞳を持ち、戦闘力がとても高いことが特徴。<br>
+                            魔力崩壊の元凶とされており、世界から迫害されている。<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="PCcontent">
+                <div class="swiper-button-prev"></div> 
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
     </section>
 
     <section id="Music">
         <h2>Music</h2>
         <p class="titleExposition">ゲーム内のサウンドの再生</p>
+        <p class="content">comming soon...</p>
     </section>
 
     <section id="Game">
         <h2>Game</h2>
         <p class="titleExposition">ゲームのプレイはこちら</p>
-        <p>comming soon...</p>
+        <p class="content">comming soon...</p>
     </section>
+    <script>
+        const mySwiper = new Swiper ('.swiper', {
+            loop: true,
+            pagination: {
+            el: '.swiper-pagination',
+            },
+            navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+            }
+        })
+    </script>
 </body>
 </html>

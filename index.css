@@ -69,6 +69,33 @@ section#Character .Explanation p
     vertical-align: middle;
 }
 
+.CharacterContent
+{
+    text-align: left;
+}
+
+.swiper{
+    width: 70vw;
+    height: 30vh;
+    margin-top: 5vh;
+}
+
+.wordContent
+{
+    margin: 0 5vw;
+}
+
+.KeywordMame
+{
+    font-size: 30px;
+    margin-bottom: 2vh;
+}
+
+.PCcontent
+{
+    display: block;
+}
+
 @media screen and (max-width:960px) 
 {
     #titleName h1
@@ -111,4 +138,19 @@ section#Character .Explanation p
         padding: 5vh 10vw;
     }
 
+    .wordContent
+    {
+        margin: 0 20vw;
+        text-align: left;
+    }
+
+    .swiper{
+        width: 90vw;
+        height: 60vh;
+    }
+
+    .PCcontent
+    {
+        display: none;
+    }
 }
